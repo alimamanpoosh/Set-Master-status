@@ -10,7 +10,10 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 from PyQt6.QtGui import QIcon,QFont, QPixmap, QMovie
 from PyQt6.QtCore import QSize
 from PyQt6.QtWidgets import QTableWidgetItem
+from persiantools import jdatetime
 
+import mysql.connector as mc
+# import mysql.connector
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -1099,7 +1102,93 @@ class Ui_MainWindow(object):
         self.Btn_close.clicked.connect(MainWindow.close)
         self.Btn_max.clicked.connect(MainWindow.showMaximized)
         self.Btn_min.clicked['bool'].connect(MainWindow.showMinimized)
+        # self.Btn_Accept_add.clicked.connect(self.addProfessor)
 
+        ###################date##################### ******************************************
+        self.label_Date.setText(str(jdatetime.date.today()))
+
+    # data base
+    # def addProfessor(self):
+    #     try:
+    #         mydb = mc.connect(
+    #             host="localhost",
+    #             user="root",
+    #             password="",
+    #             database="setstatus"
+    #         )
+    #         mycursor = mydb.cursor()
+    #
+    #         nameProfessor = self.lineEdit_namePro_add.text()
+    #         nameCourse = self.lineEdit_nameStudy_add.text()
+    #         Days = self.lineEdit_Days_add.text()
+    #         Time = self.lineEdit_time_add.text()
+    #
+    #         query = "INSERT INTO professors (nameprofessor, nameofcourse, days, time) VALUES (%s, %s, %s, %s)"
+    #         value = (nameProfessor, nameCourse, Days, Time)
+    #
+    #         mycursor.execute(query, value)
+    #         mydb.commit()
+    #
+    #     except mc.Error as e:
+    #         self.label_4.setText("Error")
+    #         self.label_3.setText("Error")
+    #         self.label_2.setText("Error")
+    #         self.label_5.setText("Error")
+
+    # def showClassList(self):
+    #     dbname = "setstatus"
+    #     tblname = "professors"
+    #     try:
+    #         mydb = mc.connect(
+    #             host="localhost",
+    #             user="root",
+    #             password="",
+    #             database=dbname
+    #         )
+    #         mycursor = mydb.cursor()
+    #         mycursor.execute("SELECT * FROM {}".format(tblname))
+    #         result = mycursor.fetchall()
+    #         self.tableWidget_add.setRowCount(0)
+    #         for row_number, row_date in enumerate(result):
+    #             self.tableWidget_add.insertRow(row_number)
+    #             for column_number, data in enumerate(row_date):
+    #                 self.tableWidget_add.setItem(row_number, column_number, QTableWidgetItem(str(data)))
+    #     except mc.Error as e:
+    #         print("Error occured")
+
+    # def addProfessor(self):
+    #     mydb = mysql.connector.connect(
+    #         host="localhost",
+    #         user="root",
+    #         password="",
+    #         database="setstatus"
+    #     )
+    #     nameProfessor = self.lineEdit_namePro_add.text()
+    #     nameCourse = self.lineEdit_nameStudy_add.text()
+    #     Days = self.lineEdit_Days_add.text()
+    #     Time = self.lineEdit_time_add.text()
+    #     mycursor = mydb.cursor()
+    #     sql = "INSERT INTO  (nameprofessor, nameofcourse, days, time) VALUES (%s, %s, %s, %s)"
+    #     val = (nameProfessor, nameCourse, Days, Time)
+    #     mycursor.execute(sql, val)
+    #     mydb.commit()
+    #     print(mycursor.rowcount, "details inserted")
+    #     # disconnecting from server
+    #     mydb.close()
+
+    # def db_connect(self):
+    #     try:
+    #         mydb = mc.connect(
+    #             host="localhost",
+    #             user="root",
+    #             password="",
+    #             database="setstatus"
+    #         )
+    #
+    #         self.label_2.setText(" connection")
+    #
+    #     except mc.Error as e:
+    #         self.label_2.setText("Error ")
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -1112,7 +1201,7 @@ class Ui_MainWindow(object):
         item = self.tableWidget_add.horizontalHeaderItem(1)
         item.setText(_translate("MainWindow", "Name Professor"))
         item = self.tableWidget_add.horizontalHeaderItem(2)
-        item.setText(_translate("MainWindow", "Name Study"))
+        item.setText(_translate("MainWindow", "Name Course"))
         item = self.tableWidget_add.horizontalHeaderItem(3)
         item.setText(_translate("MainWindow", "Days"))
         item = self.tableWidget_add.horizontalHeaderItem(4)

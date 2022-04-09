@@ -455,7 +455,7 @@ QPushButton:pressed {
       <item>
        <widget class="QStackedWidget" name="stackedWidget">
         <property name="currentIndex">
-         <number>1</number>
+         <number>2</number>
         </property>
         <widget class="QWidget" name="page_Home">
          <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -2219,7 +2219,7 @@ QPushButton:pressed {
         <layout class="QHBoxLayout" name="horizontalLayout_5">
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_7">
-           <item alignment="Qt::AlignLeft|Qt::AlignBottom">
+           <item>
             <widget class="QLabel" name="label_Date">
              <property name="minimumSize">
               <size>
@@ -2257,7 +2257,7 @@ QPushButton:pressed {
              </property>
             </spacer>
            </item>
-           <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+           <item>
             <widget class="QLabel" name="label_Version">
              <property name="maximumSize">
               <size>
