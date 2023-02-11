@@ -21,4 +21,4 @@ another way use command:
 ```pyuic6 -x main.ui -o main.py```
 
 
-run UI.py
+run Ui.py
