@@ -19,3 +19,6 @@ one way to convert, use Qt
 another way use command:
 
 ```pyuic6 -x main.ui -o main.py```
+
+
+run UI.py
