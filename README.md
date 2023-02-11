@@ -1,3 +1,3 @@
 # Set-Master-status_temp
 
-''' pip install pyqt6 '''
+``` pip install pyqt6 ```
