@@ -10,12 +10,15 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 from PyQt6.QtGui import QIcon,QFont, QPixmap, QMovie
 from PyQt6.QtCore import QSize
 from PyQt6.QtWidgets import QTableWidgetItem
-from persiantools import jdatetime
+# from persiantools import jdatetime
 
-import mysql.connector as mc
+# import mysql.connector as mc
 # import mysql.connector
+# from Data_Base import *
 
 class Ui_MainWindow(object):
+    # _engine = create_engine('mysql+pymysql://admin:1234@localhost/test_setstatus')
+    # _base = declarative_base()
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1034, 720)
@@ -1105,7 +1108,8 @@ class Ui_MainWindow(object):
         # self.Btn_Accept_add.clicked.connect(self.addProfessor)
 
         ###################date##################### ******************************************
-        self.label_Date.setText(str(jdatetime.date.today()))
+        # self.label_Date.setText(str(jdatetime.date.today()))
+        self.lineEdit_old_pass
 
     # data base
     # def addProfessor(self):
@@ -1190,6 +1194,22 @@ class Ui_MainWindow(object):
     #     except mc.Error as e:
     #         self.label_2.setText("Error ")
 
+    ############   DATA BASE   ############
+    # {
+    #
+    # def addProfessor(self):
+    #     db = DB()
+    #     db.create_all_table()
+    #     db.create_session()
+    #     namePro = self.lineEdit_namePro_add.text()
+    #     addProfessor = db.Professor(firstname=namePro)
+    #
+
+
+
+
+
+    #}
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))

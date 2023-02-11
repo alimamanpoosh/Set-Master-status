@@ -337,6 +337,7 @@ QPushButton:pressed {
              <property name="font">
               <font>
                <pointsize>10</pointsize>
+               <weight>75</weight>
                <bold>true</bold>
               </font>
              </property>
@@ -464,6 +465,7 @@ QPushButton:pressed {
             <property name="font">
              <font>
               <pointsize>36</pointsize>
+              <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
@@ -655,6 +657,7 @@ QPushButton:pressed {
                      <widget class="QLabel" name="label_2">
                       <property name="font">
                        <font>
+                        <weight>75</weight>
                         <bold>true</bold>
                        </font>
                       </property>
@@ -879,188 +882,6 @@ QPushButton:pressed {
                  </item>
                 </layout>
                </widget>
-              </item>
-             </layout>
-            </widget>
-            <widget class="QWidget" name="remove_professor">
-             <attribute name="title">
-              <string>Remove Professor</string>
-             </attribute>
-             <layout class="QVBoxLayout" name="verticalLayout_17">
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_14">
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_16">
-                  <item>
-                   <widget class="QPushButton" name="Btn_showList_rm">
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton:hover {	
-	color: rgb(210, 210, 210);
-	background-color: rgb(44, 49, 60);
-}
-QPushButton
-{
-
-	border-radius: 5px;
-	padding: 5px;
-	color: rgb(85, 170, 255);
-	background-color: rgb(52, 58, 71);
-}
-QPushButton:pressed {	
-	background-color: rgba(85, 170, 255,0.5);
-	
-}</string>
-                    </property>
-                    <property name="text">
-                     <string>show List</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <spacer name="horizontalSpacer_21">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>40</width>
-                      <height>20</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <widget class="QTableWidget" name="tableWidget_rm">
-                <property name="styleSheet">
-                 <string notr="true">color: rgb(255, 0, 0);</string>
-                </property>
-                <attribute name="horizontalHeaderDefaultSectionSize">
-                 <number>175</number>
-                </attribute>
-                <column>
-                 <property name="text">
-                  <string>id</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Name Professor</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Name Study</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Days</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>time</string>
-                 </property>
-                </column>
-               </widget>
-              </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_16">
-                <item>
-                 <widget class="QLabel" name="label_6">
-                  <property name="styleSheet">
-                   <string notr="true">color: rgb(255, 255, 255);</string>
-                  </property>
-                  <property name="text">
-                   <string>Id :</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_19">
-                  <item>
-                   <widget class="QLineEdit" name="lineEdit_id_rm">
-                    <property name="styleSheet">
-                     <string notr="true">background-color:rgba(0, 0, 0, 0);
-border:1px solid rgba(0, 0, 0, 0);
-border-bottom-color:rgba(46, 82, 101, 255);
-color:rgb(255, 255, 255);
-padding-bottom:7px</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <spacer name="horizontalSpacer_27">
-                    <property name="orientation">
-                     <enum>Qt::Horizontal</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>40</width>
-                      <height>20</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_18">
-                <item>
-                 <widget class="QCheckBox" name="checkBox_rm">
-                  <property name="styleSheet">
-                   <string notr="true">color: rgb(255, 255, 255);</string>
-                  </property>
-                  <property name="text">
-                   <string>Are you sure you want to delete this master?</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_26">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="Btn_Accept_rm">
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton:hover {	
-	color: rgb(210, 210, 210);
-	background-color: rgb(44, 49, 60);
-}
-QPushButton
-{
-
-	border-radius: 5px;
-	padding: 5px;
-	color: rgb(85, 170, 255);
-	background-color: rgb(52, 58, 71);
-}
-QPushButton:pressed {	
-	background-color: rgba(85, 170, 255,0.5);
-	
-}</string>
-                  </property>
-                  <property name="text">
-                   <string>Accept</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
               </item>
              </layout>
             </widget>
@@ -1409,6 +1230,188 @@ padding-bottom:7px</string>
                 </item>
                 <item>
                  <widget class="QPushButton" name="Btn_Accept_changeInfo">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton:hover {	
+	color: rgb(210, 210, 210);
+	background-color: rgb(44, 49, 60);
+}
+QPushButton
+{
+
+	border-radius: 5px;
+	padding: 5px;
+	color: rgb(85, 170, 255);
+	background-color: rgb(52, 58, 71);
+}
+QPushButton:pressed {	
+	background-color: rgba(85, 170, 255,0.5);
+	
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Accept</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="remove_professor">
+             <attribute name="title">
+              <string>Remove Professor</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_14">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_16">
+                  <item>
+                   <widget class="QPushButton" name="Btn_showList_rm">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton:hover {	
+	color: rgb(210, 210, 210);
+	background-color: rgb(44, 49, 60);
+}
+QPushButton
+{
+
+	border-radius: 5px;
+	padding: 5px;
+	color: rgb(85, 170, 255);
+	background-color: rgb(52, 58, 71);
+}
+QPushButton:pressed {	
+	background-color: rgba(85, 170, 255,0.5);
+	
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>show List</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_21">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_rm">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 0, 0);</string>
+                </property>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>175</number>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>id</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Name Professor</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Name Study</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Days</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>time</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>Id :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_19">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_id_rm">
+                    <property name="styleSheet">
+                     <string notr="true">background-color:rgba(0, 0, 0, 0);
+border:1px solid rgba(0, 0, 0, 0);
+border-bottom-color:rgba(46, 82, 101, 255);
+color:rgb(255, 255, 255);
+padding-bottom:7px</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_27">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_18">
+                <item>
+                 <widget class="QCheckBox" name="checkBox_rm">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>Are you sure you want to delete this master?</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_26">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="Btn_Accept_rm">
                   <property name="styleSheet">
                    <string notr="true">QPushButton:hover {	
 	color: rgb(210, 210, 210);
@@ -2003,6 +2006,7 @@ QComboBox QAbstractItemView {
                  </property>
                  <property name="font">
                   <font>
+                   <weight>75</weight>
                    <bold>true</bold>
                   </font>
                  </property>
@@ -2048,6 +2052,7 @@ color: rgb(255, 255, 255);
                  </property>
                  <property name="font">
                   <font>
+                   <weight>75</weight>
                    <bold>true</bold>
                   </font>
                  </property>
